@@ -14,7 +14,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState();
   const sendRequest = async () => {
     const res = await axios
-      .get("http://localhost:5000/api/meal")
+      .get("https://msit-backend.onrender.com/api/meal")
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
